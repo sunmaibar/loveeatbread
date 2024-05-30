@@ -32,7 +32,6 @@ const Wrapper = styled.div`
   .tag-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 5px;
   }
   .link {

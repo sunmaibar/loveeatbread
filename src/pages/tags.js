@@ -10,7 +10,7 @@ const Tags = () => {
 
   return (
     <Layout>
-      <SEO title={'愛吃麵包'} image='../assets/images/店頭/linkcover.jpg' />
+      <SEO title={'分類'} />
       <main className='page'>
         <section className='tags-page'>
           {newTags.map((tag, index) => {

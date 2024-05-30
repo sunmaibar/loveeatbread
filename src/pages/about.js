@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import Seo from '../components/SEO'
+import Store from '../components/Store'
 const About = () => {
   return (
     <Layout>
@@ -22,11 +23,12 @@ const About = () => {
             </Link>
           </article>
           <StaticImage
-            src='../assets/images/about.jpeg'
+            src='../assets/images/店頭/DSC09887.JPG'
             alt='關於愛吃麵包'
             className='about-img'
           />
         </section>
+        <Store />
       </main>
     </Layout>
   )
