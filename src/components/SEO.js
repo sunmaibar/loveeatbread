@@ -34,15 +34,6 @@ const SEO = ({ title, description, image }) => {
       />
       {/* <meta name="image" content={metaImage} /> */}
       <link rel='image_src' href={image} />
-      <script
-        async
-        src='https://www.googletagmanager.com/gtag/js?id=G-S6JL1Y87MB'
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-S6JL1Y87MB');
-      </script>
     </Helmet>
   )
 }
