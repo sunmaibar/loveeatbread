@@ -6,7 +6,7 @@ import Seo from '../components/SEO'
 const About = () => {
   return (
     <Layout>
-      <Seo title='關於愛吃麵包' image='../assets/images/about.jpeg' />
+      <Seo title='關於愛吃麵包' image='../assets/images/店頭/linkcover.jpg' />
       <main className='page'>
         <section className='about-page'>
           <article>

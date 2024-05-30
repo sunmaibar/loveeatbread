@@ -5,7 +5,7 @@ import Seo from '../components/SEO'
 const Breads = () => {
   return (
     <Layout>
-      <Seo title={'麵包種類'} image='../assets/images/店頭/linkcover.jpg' />
+      <Seo title={'滿滿的麵包'} image='../assets/images/店頭/linkcover.jpg' />
       <main className='page'>
         <AllList />
       </main>

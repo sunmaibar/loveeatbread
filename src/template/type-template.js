@@ -3,11 +3,13 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import BreadsList from '../components/BreadsList'
 // import CakeList from '../components/CakeList'
+import Seo from '../components/SEO'
 
 const TypeTemplate = ({ data, pageContext }) => {
   const breads = data.allContentfulLoveeatbreads.nodes
   return (
     <Layout>
+      <Seo title={pageContext.type} />
       <main className='page'>
         <h2>{pageContext.type}</h2>
         <div className='tag-recipes'>
