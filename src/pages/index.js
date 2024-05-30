@@ -3,11 +3,11 @@ import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import FeaturedBreads from '../components/FeaturedBreads'
 import FeaturedCakes from '../components/FeaturedCakes'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 export default function Home() {
   return (
     <Layout>
-      <SEO title={'愛吃麵包'} image='../assets/images/店頭/linkcover.jpg' />
+      <Seo title={'歡迎光臨'} />
       <main className='page'>
         <header className='hero'>
           <StaticImage

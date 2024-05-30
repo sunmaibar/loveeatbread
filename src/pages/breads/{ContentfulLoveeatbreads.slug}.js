@@ -5,7 +5,7 @@ import Layout from '../../components/Layout'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import FeaturedBreads from '../../components/FeaturedBreads'
 import FeaturedCakes from '../../components/FeaturedCakes'
-import SEO from '../../components/SEO'
+import Seo from '../../components/SEO'
 const BreadTemplate = ({ data }) => {
   const { product, price, type, description, images } =
     data.contentfulLoveeatbreads
@@ -14,7 +14,7 @@ const BreadTemplate = ({ data }) => {
   console.log(desc)
   return (
     <Layout>
-      <SEO title={product} image={pathToImage.images.fallback.src} />
+      <Seo title={product} image={pathToImage.images.fallback.src} />
       <main className='page'>
         <div className='recipe-page'>
           {/* hero */}

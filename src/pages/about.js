@@ -2,11 +2,11 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 const About = () => {
   return (
     <Layout>
-      <SEO title='關於愛吃麵包' image='../assets/images/about.jpeg' />
+      <Seo title='關於愛吃麵包' image='../assets/images/about.jpeg' />
       <main className='page'>
         <section className='about-page'>
           <article>
