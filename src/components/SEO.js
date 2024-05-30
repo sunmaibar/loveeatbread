@@ -33,7 +33,7 @@ const SEO = ({ title, description, image }) => {
         content='愛吃麵包，一家從1960年就開始傳承的麵包店，60年來始終秉持著對食材的堅持，嚴選最天然的材料，不添加人工香料或防腐劑，只為給顧客帶來最安心、健康的美味。'
       />
       {/* <meta name="image" content={metaImage} /> */}
-      <link rel='image_src' href={imageha} />
+      <link rel='image_src' href={image} />
     </Helmet>
   )
 }

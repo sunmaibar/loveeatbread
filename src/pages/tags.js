@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import setUpTags from '../utils/setUpTags'
+import SEO from '../components/SEO'
 
 const Tags = () => {
   const data = useStaticQuery(query)
@@ -9,6 +10,7 @@ const Tags = () => {
 
   return (
     <Layout>
+      <SEO title={'愛吃麵包'} image='../assets/images/店頭/linkcover.jpg' />
       <main className='page'>
         <section className='tags-page'>
           {newTags.map((tag, index) => {

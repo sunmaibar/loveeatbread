@@ -7,7 +7,7 @@ import SEO from '../components/SEO'
 export default function Home() {
   return (
     <Layout>
-      <SEO title={'愛吃麵包'} />
+      <SEO title={'愛吃麵包'} image='../assets/images/店頭/linkcover.jpg' />
       <main className='page'>
         <header className='hero'>
           <StaticImage
