@@ -11,8 +11,9 @@ const query = graphql`
       }
     }
     file(name: { eq: "linkcover" }) {
-      relativePath
-      publicURL
+      childrenImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
     }
   }
 `
@@ -22,8 +23,9 @@ const SEO = ({ title, description, image }) => {
   // const { images } = site.siteMetadata
   const metaDescription = description || site.siteMetadata.description
   // const metaImage = images || `${siteUrl}${coverImage}`
-  console.log(file)
-  const imageha = image || file.publicURL
+  const previewimg =
+    file.childrenImageSharp[0].gatsbyImageData.images.fallback.src
+  const imageha = image || previewimg
   return (
     <Helmet
       htmlAttributes={{ lang: 'zh-TW' }}
