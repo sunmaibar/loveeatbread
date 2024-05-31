@@ -20,11 +20,14 @@ const Hire = () => {
 
 export const Wrapper = styled.section`
   display: flex;
+  background: var(--primary-50);
+
   .hire {
     width: 60vw;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 50px;
   }
   a {
     color: white;
