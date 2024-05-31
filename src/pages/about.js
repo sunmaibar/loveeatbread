@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import Seo from '../components/SEO'
 import Store from '../components/Store'
+import Hire from '../components/Hire'
 const About = () => {
   return (
     <Layout>
@@ -28,9 +29,11 @@ const About = () => {
             className='about-img'
           />
         </section>
+        <Hire />
         <Store />
       </main>
     </Layout>
   )
 }
+
 export default About
