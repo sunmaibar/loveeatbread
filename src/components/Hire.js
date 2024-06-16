@@ -34,7 +34,7 @@ export const Wrapper = styled.section`
     text-decoration: none;
   }
   @media screen and (min-width: 992px) {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 `
 export default Hire
