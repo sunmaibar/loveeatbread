@@ -54,5 +54,6 @@ const Wrapper = styled.section`
   grid-template-columns: 1fr;
   @media screen and (min-width: 992px) {
     margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
   }
 `
