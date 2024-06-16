@@ -20,6 +20,10 @@ const Store = () => {
 
 export const Wrapper = styled.section`
   margin-top: 50px;
+  article {
+    align-items: center;
+    text-align: center;
+  }
 `
 
 export default Store
