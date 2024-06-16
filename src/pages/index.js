@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import FeaturedBreads from '../components/FeaturedBreads'
 import FeaturedCakes from '../components/FeaturedCakes'
 import Seo from '../components/SEO'
+import Slogn from '../components/Slogn'
 export default function Home() {
   return (
     <Layout>
@@ -18,14 +19,12 @@ export default function Home() {
           />
           <div className='hero-container'>
             <div className='hero-text'>
-              <StaticImage
-                src='../assets/images/landingTitle.png'
-                alt='title'
-                height={75}
-              />
+              <h2>歡迎光臨愛吃麵包</h2>
+              <h5>吃在嘴裡甜在心裡</h5>
             </div>
           </div>
         </header>
+        <Slogn />
         <FeaturedBreads />
         <FeaturedCakes />
       </main>

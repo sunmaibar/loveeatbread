@@ -10,8 +10,7 @@ const BreadTemplate = ({ data }) => {
   const { product, price, type, description, images } =
     data.contentfulLoveeatbreads
   const pathToImage = getImage(images[0])
-  const desc = renderRichText(description)
-  console.log(desc)
+
   return (
     <Layout>
       <Seo title={product} image={pathToImage.images.fallback.src} />
@@ -27,16 +26,22 @@ const BreadTemplate = ({ data }) => {
             <article className='recipe-info'>
               <h2>{product}</h2>
               <h5>售價：${price}元</h5>
-              <p>{desc}</p>
+              <p>{description ? renderRichText(description) : null}</p>
               {type.includes('蛋糕') ? (
-                <p>
-                  蛋糕尺寸為6/8/10/12/14寸，標價皆以6寸為主，請提前3-7天預訂
-                </p>
+                <>
+                  <p>
+                    蛋糕皆可客製化，能依照客戶的顏色及圖案做調整，水果依照當令時節為主，請洽櫃檯人員
+                    ☎️02-2975-9666
+                  </p>
+                  <p>
+                    蛋糕尺寸大多為6-8吋，網站標價皆以6吋為主，最大尺寸能到20吋，請提前3天預訂
+                  </p>
+                </>
               ) : (
                 <>
-                  <p>麵包出爐時間：每日上午8時，下午2時，每日新鮮現做</p>
-                  <p>歐式麵包任選三個100元</p>
-                  <p>售價因分店不同而略有差異，實際以店面販售價格為主</p>
+                  <p>
+                    店內麵包選擇高達八十多種，每日新鮮現做，不定時舉辦優惠活動，歡迎光臨來店選購。我們也有配合Ubereats，Foodpanda外送平台喔。
+                  </p>
                 </>
               )}
               {/* tags */}

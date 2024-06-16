@@ -31,7 +31,7 @@ const Navbar = () => {
             activeClassName='active-link'
             onClick={() => setShow(false)}
           >
-            精選蛋糕
+            蛋糕
           </Link>
           <Link
             to='/breads'
@@ -39,7 +39,7 @@ const Navbar = () => {
             activeClassName='active-link'
             onClick={() => setShow(false)}
           >
-            麵包糕點
+            麵包
           </Link>
 
           <Link
